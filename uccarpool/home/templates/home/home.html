@@ -1,5 +1,48 @@
 {% extends "home/header.html" %}
 
 {% block content %}
-<p> Hey Welcome to UC Carpool! </p>
+
+{% load static from staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="UC Carpooling Style.css">
+<div id="section1" class="container-fluid">
+<div class="wall">
+        <div class="whatis">
+                <h1>What is UC Carpooling?</h1>
+                <img src="{% static 'home/img/RoadTrip.jpg' %}" class = "responsive-img "align="right" style="width: 30%; height: 30%; margin: 0 3% 2% 2%">
+                <p class="bodytext"> UC Carpooling is a real-time, location-based, ride-sharing app. Made by UC students for UC students, UC Carpooling allows for seamless interaction with anybody in the Cincinnati area using our app. <br> <br> Need a ride to campus? Important game or concert you don't have a ride to? Use our app to find anyone going anywhere you need to go to! Our app provides the means for you to get in touch with your new carpool crew and allows you and your crew to figure out who owes what. Keep in contact with your crew without risk using instant messaging; no exchanging of cell phone numbers necessary.<br><br> Need some extra cash? UC Carpooling is also a great way for you to earn some money on the side while helping your fellow students go places! Passengers can also rate their drivers after the drive to help other people find trustworthy drivers.</p>
+        </div>
+</div>
+</div>
+<div id="section2" class="container-fluid">
+<div class="howitworks">
+        <h1>How Does it Work?</h1>
+        <img src="{% static 'home/img/GPSphoto.jpg' %}" align="right" style="width: 22%; height: 22%; margin: 0 3% 2% 2%">
+                <p class="bodytext"> After downloading our app, sign up with your UC Email and create an account with ease. Location services allows you to see everyone around you who needs a ride or wants to drive other people (Make sure Location/GPS services are active at all times). Tap on any icon on the map to find out the person's name, rating, and whether they're a rider or driver. Riders will show where they want to go and what they can offer. Drivers will show when and where they plan to drive to and what they'd like in return. <br><br> Talk to people, make some deals and get on the road!
+                </p>
+</div>
+</div>
+<div id="section3" class="container-fluid">
+<div class="container">
+        <h1 class="welltext">Contact Us</h1>
+        <p class="welltext"> We at UC Carpooling value any and all feedback concerning our app. Please understand that our app is still in its development stage, so any issues reported will be greatly appreciated. Just fill out the bottom fields,hit 'Submit' and a developer will answer your question in a timely manner.</p>
+<div class="well">
+        <form action="/action_page.php">
+                <div class="form-group">
+                <label for="usr">Email:</label>
+                <input type="text" class="form-control" id="usr">
+        </div>
+        <div class="form-group">
+                <label for="pwd">First Name:</label>
+                <input type="password" class="form-control" id="pwd">
+                <label for="comment"> Comments/Questions: </label>
+                <textarea class="form-control" value="Comments/Questions:" rows="5" id="comment"> </textarea>
+                <input type="submit" value="Submit" style="margin-top: 1%;">
+        </form>
+</div>
+</div>
+</div>
+
+
+
 {% endblock %}

@@ -1,29 +1,69 @@
 /* ------------------------UC Carpooling Style.css------------------------ */
 
+/* Navbar Styles*/
 
+a.navbarBTN:hover{
+	color: darkgray;
+}
+
+/* Carousel Styles */
+
+div.carousel-inner{
+	margin-top: 10%;
+	width: auto; height: auto !important;
+}
+
+
+ol.carousel-indicators {
+ 	position: absolute;
+ 	bottom: 0;
+ 	margin: 0;
+ 	left: 0;
+ 	right: 0;
+ 	width: auto;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+ 	float: center;
+ 	width: 10%;
+ 	height: 10px;
+ 	margin: 0 2% 0 2%;
+ 	border-radius: 0;
+ 	border: 0 2% 0 2%;
+ 	background: transparent;
+}
+
+ol.carousel-indicators li.active {
+	background: rgb(140,20,20);
+}
+
+div.carousel-caption{
+	background: rgba(0,0,0,0.65);
+	height: 30%;	
+}
+
+h3.carousel-caption{
+	min-height: 80%;
+	font-family: Impact, fantasy;
+}
+
+p.carousel-disc{
+	margin-top: 5%;
+	font-family: Arial, sans-serif;
+}
 
 /* Body & Header Styles */
 
 body{
-	background-color: rgb(226,40,40);
+	
 }
-
-div.page-header{
-	background-color: grey;
-	margin: 2% 0 0 0;
-}
-
 div.stats{
 	background-color: orange;
 	width: 100%
 	margin: 0 0 0 0;
 }
 
-
-div.piechart{
-	width: 33.3%;
-	margin: 3% 0 0 3%;
-}
 
 div.whatis{
 	margin: 6% 2% 6% 2%;
@@ -36,10 +76,22 @@ div.howitworks{
 p.bodytext{
 	font-size: 125%;
 	margin: 1% 3% 0 3%;
+	line-height: 180%;
+	font-family: Arial, sans-serif;
 }
 
+hr{
+	text-align: center !important;
+	margin-left: 5% !important; 
+	width: 90%;
+	height: 10px;
+}
+
+
 h1{
-	margin: 0 3% 0 3%;
+	margin: 0 0 0 3%;
+	font-family: Impact, fantasy;
+
 }
 
 h1.download{
@@ -48,6 +100,8 @@ h1.download{
 	margin: 2% 0 3% 0;
 }
 
+/* Contact Us Form Styles  */
+
 h1.welltext{
 	margin: 0 0 0 -3.6%;
 }
@@ -55,32 +109,24 @@ h1.welltext{
 p.welltext{
 	font-size: 125%;
 	margin: 1% 0 0 -3.6%;
+	font-family: Arial, sans-serif;;
 }
 
 div.well{
 	margin: 2% 0 0 0; 
 }
 
-/* Navbar Styles */
-
-
-li {
-    float: left;
-    border-right: 1px solid #bbb;
-    width: 33.3%;
+input.submitBTN:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+	color: black;
 }
 
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+hr{
+	margin: 0 0 0 0;
 }
 
-li a:hover{
-    background-color: #111;
-    color: white;
+input.submitBTN{
+	margin-top: 2%;
 }
 
 /* Footer Styles */
@@ -99,12 +145,14 @@ p.footertext{
 	position: relative;
 	text-align: center;
 	color: white;
-	font-size: 115%
+	font-family: New Century Schoolbook, serif;
+	font-size: 115%;
 }
 
 a.topofpage{
 	text-align: center;
 	color: white;
+	font-family: New Century Schoolbook, serif;
 	font-size: 115%
 }
 

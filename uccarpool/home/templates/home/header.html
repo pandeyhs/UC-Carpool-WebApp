@@ -2,44 +2,54 @@
 <html lang="en">
 
 <head>
-        <title>UC Carpool</title>
-        <meta charset="utf-8" />
-        {% load staticfiles %}
-        <link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}" type = "text/css"/>
-        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-         <style>
-         body {
-             position: relative;
-         }
-         #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
-         #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
-         #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+<title>UC Carpool</title>
+<meta charset="utf-8" />
 
+{% load staticfiles %}
+
+<link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}" type = "text/css"/>
+<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+
+body {
+position: relative;
+}
+#main {padding-top:50px;height:750px;background-color: #ff0000 ;}
+#About {padding-top:50px;height:700px; background-color: #1E88E5;}
+#Get_It {padding-top:50px;height:750px; background-color: #673ab7;}
+#Contact_Us {padding-top:50px;height:750px; background-color: #ff9800;}
+
+</style>
+
+<style type="text/css">
+         html,
+         body {
+         height:100%
+         }
          </style>
-        <style type="text/css">
-                html,
-                body {
-                  height:100%
-                }
-        </style>
+
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-    <img src="{% static 'home/img/uc.png' %}" class="responsive-img" style='max-height:50px;' alt="face">
-
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-            <li><a href="#section1">ABOUT</a></li>
-            <li><a href="#section2">GET IT</a></li>
-            <li><a href="#section3">CONTACT US</a></li>
+         <div class="container-fluid">
+         <div class="navbar-header">
+         <a class = "navbar-brand" href="#main">
+            <img alt = "Brand" src="{% static 'home/img/uc.png' %}" class="responsive-img" style='max-height:35px;' alt="face" >
+</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#About">ABOUT</a></li>
+        <li><a href="#Get_It">GET IT</a></li>
+        <li><a href="#Contact_Us">CONTACT US</a></li>
         </ul>
 
-  </div>
-</nav>
+          </div>
+          </nav>
+</body>
 <body class="body" style="background-color:#f6f6f6">
 
 {% block content %}
@@ -47,15 +57,17 @@
 
 
 
-</body>
-<footer>
-<center>
-        <div class="container-fluid" >
-                <p><a href="/" target="blank">About</a> | <a href="/" target="blank">Get It</a> | <a href="/" target="blank">Contact Us</a></p>
-        </div>
-        </center>
-</footer>
 
 </body>
+
+<footer>
+<center>
+<div class="container-fluid" >
+<p><a href="/" target="blank">About</a> | <a href="/" target="blank">Get It</a> | <a href="/" target="blank">Contact Us</a></p>
+</div>
+</center>
+</footer>
+
+
 
 </html>
